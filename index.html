@@ -1,24 +1,242 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Sesión 1 6to Primaria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 1: ¡El Inicio de tu Legado como Director de Tecnología!</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Resumen de la Misión</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos de Aprendizaje:</strong>
+                                    <ul>
+                                        <li>Comprender la visión de Gnius Club como un espacio para convertirse en creador y director de tecnología, no solo en consumidor.</li>
+                                        <li>Identificar el ecosistema de hardware y software que utilizarán durante el año (XGO Robot, Smart A.I. Lens, Micro:bit, MakeCode).</li>
+                                        <li>Entender la importancia de tener una cuenta en la nube para guardar y gestionar sus proyectos de programación.</li>
+                                    </ul>
+                                    <strong>Secuencia de la Sesión (40 min):</strong>
+                                    <ol>
+                                        <li>¡Bienvenidos al Gnius Club! (5 min)</li>
+                                        <li>Tu Arsenal de Creador (10 min)</li>
+                                        <li>Forjando tu Identidad de Creador Digital (20 min)</li>
+                                        <li>Mirando al Horizonte (5 min)</li>
+                                    </ol>
+                                    <strong>Entregable Clave de la Sesión:</strong>
+                                    <ul>
+                                        <li>Cada estudiante tendrá una cuenta personal creada exitosamente en la plataforma <strong>MakeCode</strong>, con un primer proyecto guardado en la nube con su nombre, confirmando el correcto funcionamiento del registro.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Dispositivos (laptops/tablets) para cada estudiante.</li>
+                                        <li>Presentación de diapositivas para la sesión.</li>
+                                        <li>Un kit de XGO Robot V2 + Smart A.I. Lens para mostrar físicamente (no para usar aún).</li>
+                                        <li>Video corto e inspirador sobre creación con tecnología (ej. "Change the World" o similar).</li>
+                                    </ul>
+                                    <strong>Preparación Previa del Facilitador:</strong>
+                                    <ol>
+                                        <li>Verificar la conexión a internet y el acceso a la plataforma MakeCode desde el aula.</li>
+                                        <li>Tener la presentación de diapositivas lista y el video inspirador descargado o precargado para evitar buffering.</li>
+                                        <li>Crear una cuenta de prueba en MakeCode para estar familiarizado con el proceso exacto de registro (ya sea con cuenta de Microsoft o Google) y poder guiar a los alumnos sin contratiempos.</li>
+                                        <li>Tener el robot XGO ensamblado y listo para mostrarlo físicamente.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: ¡Bienvenidos al Gnius Club! ⏰ 5 minutos</h2>
+                <p>Establecer un tono aspiracional y emocionante, presentando a los estudiantes como futuros líderes e innovadores.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Storytelling Inspiracional ⏰ 3 minutos</h3>
+                            <p>(Proyectar la diapositiva de bienvenida de Gnius Club, con un diseño impactante).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola, futuros directores de tecnología, y bienvenidos a Gnius Club! Quiero que por un momento se olviden de todo lo que creen saber sobre una clase de tecnología. Esto no es una clase. Es un laboratorio de innovación, un centro de entrenamiento para los arquitectos del futuro. Y esos arquitectos… son ustedes.<br><br>Piensen en esto: cada día usan aplicaciones, juegan videojuegos, ven videos creados por robots o IA. Son excelentes consumidores de tecnología. Pero, ¿alguna vez se han preguntado quién está detrás de todo eso? ¿Quién diseña las reglas del juego? ¿Quién le dice al robot qué hacer? Esas personas no son seguidores, son líderes. Son creadores. Y esa es la razón por la que están aquí. En Gnius Club, van a dar el salto más importante: de ser consumidores a ser creadores.<br><br>Este año, no van a aprender a usar un programa. Van a aprender a pensar como un ingeniero, a diseñar como un artista y a liderar proyectos como un director. Van a darle instrucciones a robots avanzados, les enseñarán a ver el mundo y a tomar decisiones. Están aquí para construir su legado. Y todo comienza hoy. Para que entiendan el poder que tendrán en sus manos, veamos esto...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Video Inspirador ⏰ 2 minutos</h3>
+                            <p>(Proyectar el video inspirador previamente seleccionado).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(al finalizar el video): Eso que vieron no es ciencia ficción. Es lo que personas como ustedes, con las herramientas correctas y la mentalidad correcta, están creando en este preciso momento. Y ahora, es su turno. Vamos a conocer las herramientas que conformarán su arsenal de creación.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: Tu Arsenal de Creador ⏰ 10 minutos</h2>
+                <p>Presentar el hardware y software como un ecosistema integrado de herramientas profesionales y emocionantes.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Presentación del Ecosistema Físico ⏰ 5 minutos</h3>
+                            <p>(El facilitador toma el robot XGO ensamblado y lo muestra al grupo. Proyecta una diapositiva con imágenes de alta calidad de cada componente).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Este año, trabajarán con un ecosistema tecnológico de vanguardia. Empecemos por el hardware. (Levanta el robot XGO) Esto que ven aquí no es un juguete. Es el <strong>XGO Robot Kit V2</strong>, un robot cuadrúpedo con 15 grados de libertad, inspirado en los robots que ven en empresas como Boston Dynamics. Aprenderán a controlar su movimiento, su equilibrio y a darle vida con código.<br><br>(Señala la cámara en el robot o muéstrala por separado). Estos son los ojos del robot. Es la <strong>Smart A.I. Lens</strong>. No es una simple cámara, tiene un cerebro de Inteligencia Artificial incorporado. Con ella, le enseñaremos al robot a reconocer objetos, seguir personas, leer señales y entender el mundo que lo rodea.<br><br>(Muestra un Micro:bit). Y este pequeño es el <strong>Micro:bit</strong>, el cerebro principal que conectará todo. Es el corazón de nuestros proyectos, una microcomputadora increíblemente poderosa que ustedes programarán para darle las órdenes al robot.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Presentación del Entorno Digital ⏰ 5 minutos</h3>
+                            <p>(Proyectar una diapositiva con el logo de MakeCode).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Todo este increíble hardware no hace nada sin un director que le dé instrucciones. Ese director, son ustedes. Y el lugar donde escribirán esas instrucciones, su lienzo digital, será la plataforma <strong>MakeCode</strong>. Es un entorno de programación visual basado en bloques, pero increíblemente potente. Aquí es donde diseñarán la personalidad y las acciones de sus robots.<br><br>Pero antes de empezar a crear, tenemos que hacer algo fundamental. Tenemos que construir nuestro taller digital en la nube. Necesitamos un lugar seguro donde todos sus planos, sus códigos y sus geniales ideas queden guardados para siempre. Y eso nos lleva a nuestra primera misión práctica.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: Forjando tu Identidad de Creador Digital ⏰ 20 minutos</h2>
+                <p>Enmarcar el proceso de registro como el acto de "reclamar su espacio en la nube", su "taller digital personal".</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: La Importancia de tu Taller en la Nube ⏰ 5 minutos</h3>
+                            <p>Explicar la necesidad de una cuenta en la nube para la seguridad y accesibilidad de los proyectos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Imaginen que están construyendo la estructura de LEGO más increíble del mundo. Han pasado horas en ella, es una obra maestra. De repente, alguien tropieza con la mesa y... ¡todo se cae en mil pedazos! Y no tienen fotos ni instrucciones de cómo volver a armarla. Todo su trabajo, perdido. ¿Sería frustrante, verdad?<br><br>Lo mismo pasa con el código. Si solo lo guardamos en una computadora y esa computadora falla, o si se nos olvida descargar el archivo, nuestro trabajo se pierde. Como directores de tecnología, no podemos permitirnos eso. Los profesionales trabajan en 'la nube'. La nube es como una bóveda digital gigante y segura donde sus proyectos se guardan automáticamente. Así pueden acceder a ellos desde cualquier lugar y nunca perderán su progreso. Hoy, cada uno de ustedes va a construir su propio taller digital personal en la nube de MakeCode.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Creación de Cuenta en MakeCode (Paso a Paso Guiado) ⏰ 10 minutos</h3>
+                            <p>(El facilitador proyecta su pantalla y guía a los estudiantes a través de cada paso).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Muy bien, equipo. Abran sus dispositivos y vayan a la página `makecode.microbit.org`. Les daré un momento para que todos lleguen allí.<br><br>Ahora, en la esquina superior derecha, verán un botón que dice <strong>'Sign In'</strong> o 'Iniciar Sesión'. Hagan clic ahí.<br><br>Les aparecerán varias opciones. Podrán usar una cuenta de Microsoft o una de Google. Elijan la que usan para el colegio o la que sus padres les hayan indicado. Vamos a hacer este paso juntos. Hagan clic en la opción que corresponda y sigan las instrucciones en pantalla para ingresar su usuario y contraseña. Si alguien necesita ayuda o no recuerda su contraseña, levante la mano y uno de los guías de Gnius irá a su lugar.<br><br>*(El facilitador da tiempo, camina por el salón y ayuda a quienes lo necesiten. Este paso es el más delicado).*<br><br>Una vez que hayan ingresado, la página se recargará y ahora, donde antes decía 'Sign In', debería aparecer su inicial o su foto de perfil. ¡Esa es la señal de que han entrado a su taller!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Verificación y Primer Guardado en la Nube ⏰ 5 minutos</h3>
+                            <p>Confirmar el éxito del registro mediante la creación y guardado de un primer proyecto.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Excelente! Ahora, la prueba de fuego para confirmar que su taller en la nube está funcionando. Hagan clic en el botón morado grande que dice <strong>'+ Nuevo Proyecto'</strong>.<br><br>Les pedirá un nombre. Escriban su nombre seguido de 'Mi Taller'. Por ejemplo, 'Ana Mi Taller'. Y hagan clic en 'Crear'.<br><br>Ahora están dentro de un proyecto vacío. No vamos a programar nada todavía. Lo importante es esto: miren arriba, junto al nombre de su proyecto. Deberían ver un pequeño icono de una nube. Si esa nube está ahí, significa que su proyecto se está guardando automáticamente. ¡Su trabajo está a salvo!<br><br>Ahora, la prueba final. Cierren la pestaña del navegador por completo. ... ¿Listos? Ahora, vuelvan a abrirla y regresen a `makecode.microbit.org`. Deberían ver su proyecto, con el nombre que le pusieron, en la sección de 'Mis Proyectos'. Si lo ven, levanten la mano con orgullo. ¡Lo han logrado! ¡Acaban de forjar su identidad de creador digital!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Mirando al Horizonte ⏰ 5 minutos</h2>
+                <p>Cerrar la sesión recapitulando el logro del día y generando anticipación para las próximas sesiones.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Recapitulación y Avance</h3>
+                            <p>(Proyectar una diapositiva final que resuma los próximos pasos: Xolo, Vibe Coding, Mon-e).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Equipo, felicidades! Hoy ha sido un día fundamental. No solo han entendido la visión de Gnius Club, sino que han dado el primer paso práctico y esencial para convertirse en creadores: han establecido su propio taller de desarrollo en la nube. Cada proyecto, cada línea de código, cada genialidad que construyan este año, vivirá segura en ese espacio que crearon hoy.<br><br>Pero esto es solo el comienzo. En nuestra próxima misión, conocerán a alguien muy especial: a <strong>Xolo</strong>, su copiloto personal de Inteligencia Artificial. Él será su guía, su mentor y su socio creativo. Con él, aprenderán el secreto de Gnius Club: el <strong>Vibe Coding</strong>, una nueva forma de hablar con la IA para convertir sus ideas más locas en código real.<br><br>Y finalmente, entraremos al juego del <strong>Mon-e</strong>, el sistema donde serán recompensados por su aprendizaje y su esfuerzo, ganando la oportunidad de traer sus creaciones digitales al mundo físico con la impresión 3D. El viaje apenas comienza y lo que viene es aún más emocionante. ¡Prepárense, directores! Nos vemos en la próxima misión.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
